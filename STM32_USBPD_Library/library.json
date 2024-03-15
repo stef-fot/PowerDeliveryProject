@@ -1,0 +1,20 @@
+{
+    "name": "STM32_USBPD_Library",
+    "description":"STM32_USBPD_Library",
+    "dependencies": { "STM32G4xx_HAL_Driver":"*" },
+    "build": {
+             "srcFilter" : [
+                        "+<Core/src/usbpd_trace.c>",
+                        "+<Devices/STM32G4XX/src/*>"
+             ],
+             "flags": [
+                     "-I Core/inc",
+                     "-I $PROJECT_DIR/inc",
+                     "-I Devices/STM32G4XX/inc",
+                     "-L.",
+                     "-l:USBPDCORE_PD3_FULL_CM4_wc32.a.a"
+             ]
+    },
+    "description" : "I need the double .a in the filename!!!!"
+}
+

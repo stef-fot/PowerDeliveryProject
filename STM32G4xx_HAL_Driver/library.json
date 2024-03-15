@@ -1,0 +1,20 @@
+{
+    "name": "STM32G4xx_HAL_Driver",
+    "description":"STM32 G4 HAL library",
+    "dependencies":
+    {
+      "CMSIS":"*"
+    },
+    "build": {
+        "flags": [
+                  "-I Inc",
+                  "-I $PROJECT_DIR/inc"
+        ],
+        "srcFilter" : [
+                        "+<*>",
+                        "-<Src/*_template.c>",
+                        "-<Src/Legacy>"
+        ]
+    }
+}
+
