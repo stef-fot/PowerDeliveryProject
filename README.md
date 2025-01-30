@@ -59,9 +59,9 @@ st-flash write firmware.bin 0x8000000
 
 ## Future Improvements
 
--✅ **Integration with Programmable APDO** – Support for adjustable voltage/current profiles.
--✅ **Enhanced Debugging & Logging** – Improved real-time tracing for power negotiation.
--✅ **Graphical Monitoring UI** – A web-based dashboard for live power monitoring.
+✅ **Integration with Programmable APDO** – Support for adjustable voltage/current profiles.
+✅ **Enhanced Debugging & Logging** – Improved real-time tracing for power negotiation.
+✅ **Graphical Monitoring UI** – A web-based dashboard for live power monitoring.
 
 ## Contributing
 Pull requests are welcome! For major changes, please open an **issue** first to discuss your ideas.
