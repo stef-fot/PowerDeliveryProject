@@ -9,7 +9,7 @@ This project is part of my thesis on embedded systems and power management, focu
 - **Dynamic Power Selection**: Supports three voltage modes:
   - **5V Mode**
   - **9V Mode**
-  - **11V Mode**
+  - **12V Mode**
 - The user can select the desired voltage using the joystick on the STM32G474. Upon selection, the system requests the corresponding voltage, and an LED indicator confirms the selection when negotiation is successful.
 - **Real-time Monitoring**: Logs power delivery status, including voltage, current, and contract negotiation.
 - **Safety Mechanisms**: Implements protections against overvoltage, undervoltage, and excessive current draw.
@@ -49,7 +49,7 @@ st-flash write firmware.bin 0x8000000
 ```
 
 ### 4. Select Power Mode
-- Use the joystick on the STM32G474 to request **5V, 9V, or 11V**.
+- Use the joystick on the STM32G474 to request **5V, 9V, or 12V**.
 - The system sends a USB-PD request to the power source.
 - If the negotiation is successful, the corresponding **LED indicator** lights up.
 
@@ -59,9 +59,9 @@ st-flash write firmware.bin 0x8000000
 
 ## Future Improvements
 
-✅ **Integration with Programmable APDO** – Support for adjustable voltage/current profiles.
-✅ **Enhanced Debugging & Logging** – Improved real-time tracing for power negotiation.
-✅ **Graphical Monitoring UI** – A web-based dashboard for live power monitoring.
+-✅ **Integration with Programmable APDO** – Support for adjustable voltage/current profiles.
+-✅ **Enhanced Debugging & Logging** – Improved real-time tracing for power negotiation.
+-✅ **Graphical Monitoring UI** – A web-based dashboard for live power monitoring.
 
 ## Contributing
 Pull requests are welcome! For major changes, please open an **issue** first to discuss your ideas.
